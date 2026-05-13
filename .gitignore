@@ -1,0 +1,8 @@
+.idea/
+.vscode/
+out/
+*.class
+__pycache__/
+*.pyc
+node_modules/
+tempCodeRunnerFile.py
