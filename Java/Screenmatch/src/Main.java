@@ -5,7 +5,12 @@ public class Main {
         SpiderMan.realeaseYear = 2002;
         SpiderMan.totalMinutes = 121;
 
-        System.out.println(SpiderMan.name);
-        System.out.println(SpiderMan.realeaseYear);
+        SpiderMan.showDataSheet();
+        SpiderMan.getRate(8);
+        SpiderMan.getRate(5);
+        SpiderMan.getRate(10);
+        System.out.println(SpiderMan.rating);
+        System.out.println(SpiderMan.totalRating);
+        System.out.println(SpiderMan.getAvarageRate());
     }
 }   
