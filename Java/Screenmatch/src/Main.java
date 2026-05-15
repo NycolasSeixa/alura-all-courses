@@ -1,3 +1,5 @@
+import br.com.alura.screenmatch.models.Movie;
+
 public class Main {
     public static void main(String[] args){
         Movie SpiderMan = new Movie();
@@ -9,8 +11,7 @@ public class Main {
         SpiderMan.getRate(8);
         SpiderMan.getRate(5);
         SpiderMan.getRate(10);
-        System.out.println(SpiderMan.rating);
-        System.out.println(SpiderMan.totalRating);
+        System.out.println("Total Rating: " + SpiderMan.getTotalRate());
         System.out.println(SpiderMan.getAvarageRate());
     }
 }   
