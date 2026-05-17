@@ -1,17 +1,21 @@
-import br.com.alura.screenmatch.models.Movie;
+import br.com.alura.screenmatch.calculations.TimeCalculator;
+import br.com.alura.screenmatch.models.Serie;
+
 
 public class Main {
     public static void main(String[] args){
-        Movie SpiderMan = new Movie();
-        SpiderMan.name = "SpiderMan";
-        SpiderMan.realeaseYear = 2002;
-        SpiderMan.totalMinutes = 121;
+        
+        Serie Lost = new Serie();
+        Lost.setName("Lost");
+        Lost.setRealeaseYear(2000);
+        Lost.setEpsPerSeason(10);
+        Lost.setSeasons(10);
+        Lost.showDataSheet();
+        Lost.setEpsPerSeason(10);
+        Lost.setMinutesPerEp(50);
+        System.out.println(Lost.getTotalMinutes());
 
-        SpiderMan.showDataSheet();
-        SpiderMan.getRate(8);
-        SpiderMan.getRate(5);
-        SpiderMan.getRate(10);
-        System.out.println("Total Rating: " + SpiderMan.getTotalRate());
-        System.out.println(SpiderMan.getAvarageRate());
+        TimeCalculator timer = new TimeCalculator();
+        // timer.addMovie(m);
     }
 }   
